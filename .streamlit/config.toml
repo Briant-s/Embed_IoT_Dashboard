@@ -1,0 +1,52 @@
+# Serve the bundled font files in ./static at the "app/static/..." URL path.
+[server]
+enableStaticServing = true
+
+[theme]
+base = "dark"
+showWidgetBorder = true
+
+# Accent color: buttons, sliders, active widgets, links, primary actions.
+primaryColor = "#0E9AA7"
+
+# Main app background.
+# backgroundColor = "#FFFFFF"
+
+# Background for the sidebar, st.metric cards, code blocks, inputs, etc.
+# secondaryBackgroundColor = "#F0F4F5"
+
+# Default text color.
+textColor = "#F0F4F5"
+
+# Font for all text. Set to the custom family registered below.
+# Falls back to generic "sans serif" if the font fails to load.
+font = "Plus Jakarta Sans, sans serif"
+# Use the same family for headings/titles.
+headingFont = "Plus Jakarta Sans, sans serif"
+
+# --- Custom font: Plus Jakarta Sans (self-hosted from ./static) ----------
+# Files live in the project's `static/` folder and are served at
+# "app/static/<file>" because server.enableStaticServing is on above.
+[[theme.fontFaces]]
+family = "Plus Jakarta Sans"
+weight = "400"
+style = "normal"
+url = "app/static/PlusJakartaSans-400.ttf"
+
+[[theme.fontFaces]]
+family = "Plus Jakarta Sans"
+weight = "500"
+style = "normal"
+url = "app/static/PlusJakartaSans-500.ttf"
+
+[[theme.fontFaces]]
+family = "Plus Jakarta Sans"
+weight = "600"
+style = "normal"
+url = "app/static/PlusJakartaSans-600.ttf"
+
+[[theme.fontFaces]]
+family = "Plus Jakarta Sans"
+weight = "700"
+style = "normal"
+url = "app/static/PlusJakartaSans-700.ttf"
